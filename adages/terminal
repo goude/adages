@@ -39,18 +39,8 @@ Find, do, next, repeat.
 %
 gv: reselect visual selection.
 %
-Limelight and Goyo are plugins for distraction-free writing.
-%
-Wordy uncovers common usage problems in your writing.
-%
-Reed Esau has a growing list of plugins for writers.
-%
-Sneak is a Vim plugin that enables you to move to any location specified by two characters.
-%
 C-o: insert a newline and leave point before it, and then enter insert mode
 %
 C-h: delete previous character.
-%
-gaip=: vim-easy-align – see examples at https://github.com/junegunn/vim-easy-align
 %
 Ctrl-V inserts literals.
