@@ -10,7 +10,7 @@ Various quotes and login messages (fortune format).
 >
 > You really are the most devious bastard in New York City
 >
-> - Laszlo Cravensworth
+> \- Laszlo Cravensworth
 >
 > What sort dash use? Hyphen en em other
 
@@ -34,3 +34,24 @@ You really are the most devious bastard in New York City
 ```
 
 If you're aiming for the most polished appearance, use the en dash.
+
+> source
+
+The use of the en dash (`–`) for attributions is a convention based on
+typographic standards, commonly discussed in style guides and typography
+manuals. For example:
+
+1. **The Chicago Manual of Style** (CMOS) recommends en dashes for certain types
+   of attribution in lists and quotes, though it doesn’t explicitly require it
+   in all cases.
+2. **The Elements of Typographic Style** by Robert Bringhurst, a classic
+   reference on typography, supports the use of the en dash for connecting
+   elements like attributions, as it visually balances better than a simple
+   hyphen.
+3. The hyphen (`-`) is typically used for compound words or as a general-purpose
+   punctuation mark in casual or typewriter-style writing, but it's not ideal
+   for professional typesetting.
+
+While not universally mandated, many professional writers, designers, and
+publishers adopt the en dash for elegance and readability. It’s a stylistic
+choice informed by these resources.
