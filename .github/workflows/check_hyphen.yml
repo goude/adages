@@ -1,0 +1,30 @@
+name: Check for Hyphen in Quotes
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  check_hyphen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Check for lines starting with a hyphen
+        run: |
+          offending_lines=$(grep -rn '^-' adages/ || true)
+          if [ -n "$offending_lines" ]; then
+            echo "The following lines begin with a hyphen:"
+            echo "$offending_lines"
+            echo "$offending_lines" > offending.txt
+            echo "## Hyphen Check Failed" >> $GITHUB_STEP_SUMMARY
+            echo "$offending_lines" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          else
+            echo "No offending lines found."
+            echo "## Hyphen Check Passed" >> $GITHUB_STEP_SUMMARY
