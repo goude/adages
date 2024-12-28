@@ -28,3 +28,5 @@ jobs:
           else
             echo "No offending lines found."
             echo "## Hyphen Check Passed" >> $GITHUB_STEP_SUMMARY
+          fi
+        shell: bash
