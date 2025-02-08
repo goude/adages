@@ -13,7 +13,7 @@ all: replace_hyphens
 replace_hyphens:
 	@for file in $(FILES); do \
 		echo "Processing $$file..."; \
-		sed -i 's/^-/–/' "$$file"; \
+		gsed -i 's/^-/–/' "$$file"; \
 	done
 	@echo "Replaced all hyphens at the beginning of lines with en dashes."
 
