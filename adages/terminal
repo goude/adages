@@ -44,3 +44,4 @@ C-o: insert a newline and leave point before it, and then enter insert mode
 C-h: delete previous character.
 %
 Ctrl-V inserts literals.
+%
