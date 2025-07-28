@@ -1,0 +1,107 @@
+# exploratory, and bit of fun with metadata. reduce if revisited
+
+[metadata]
+created_by = "ChatGPT-4o"
+created_on = "2025-07-28"
+source_context = "Refinement of user-supplied aphorisms and verified attribution sources"
+purpose = "Guiding aphorisms with direct quote URL attributions"
+style_goal = "Memorable, clear, morally grounded"
+language = "English"
+description = "A curated collection of guiding aphorisms—some original, some attributed—with metadata for provenance, tone, and structure. Intended for use in UI displays, philosophical tooling, or human-readable reference."
+collaboration = "human+ai"
+
+[[aphorisms]]
+quote = "Focus on those who solve problems, not on those who create them."
+attribution = "ChatGPT"
+ai_used = "Rewriting and phrasing refinement by ChatGPT"
+source_or_inspiration = "Original user-derived phrasing"
+
+[[aphorisms]]
+quote = "Stand with the solution-seekers, not the troublemakers."
+attribution = "ChatGPT"
+ai_used = "Alliterative rewording by ChatGPT"
+source_or_inspiration = "Original reformulation"
+
+[[aphorisms]]
+quote = "Give your energy to people who mend things, not those who break them."
+attribution = "ChatGPT"
+ai_used = "Metaphorical energy framing by ChatGPT"
+source_or_inspiration = "Original reformulation"
+
+[[aphorisms]]
+quote = "Heed the helpers; pay no mind to the instigators."
+attribution = "ChatGPT"
+ai_used = "Proverbial phrasing by ChatGPT"
+source_or_inspiration = "Original reformulation"
+
+[[aphorisms]]
+quote = "Honor those who heal; ignore those who harm."
+attribution = "ChatGPT"
+ai_used = "Binary contrast phrasing by ChatGPT"
+source_or_inspiration = "Original reformulation"
+
+[[aphorisms]]
+quote = "Stand by those who build up, not those who tear down."
+attribution = "ChatGPT"
+ai_used = "Balanced parallel phrasing by ChatGPT"
+source_or_inspiration = "Original reformulation"
+
+[[aphorisms]]
+quote = "Don’t waste your attention on those who cause trouble; invest it in those who solve it."
+attribution = "ChatGPT"
+ai_used = "Attention-economy framing by ChatGPT"
+source_or_inspiration = "Original reformulation"
+
+[[aphorisms]]
+quote = "Be part of the solution, not part of the problem."
+attribution = "Eldridge Cleaver"
+url = "https://www.goodreads.com/quotes/21458-if-you-are-not-a-part-of-the-solution-you"
+ai_used = "Quote retrieval and alignment with theme"
+source_or_inspiration = "Goodreads page showing exact Cleaver quote"
+
+[[aphorisms]]
+quote = "Look for the helpers. You will always find people who are helping."
+attribution = "Fred Rogers"
+url = "https://www.goodreads.com/quotes/198594-when-i-was-a-boy-and-i-would-see-scary"
+ai_used = "Quote retrieval and alignment with theme"
+source_or_inspiration = "Goodreads listing of Rogers quote"
+
+[[aphorisms]]
+quote = "You will only be remembered for two things: the problems you solve or the ones you create."
+attribution = "Mike Murdock"
+url = "https://www.goodreads.com/quotes/11941-you-will-only-be-remembered-for-two-things-the-problems"
+ai_used = "Quote retrieval and thematic validation"
+source_or_inspiration = "Goodreads listing of Mike Murdock quote"
+
+[schema]
+type = "array of tables"
+table_name = "aphorisms"
+
+[schema.aphorisms]
+required_fields = ["quote", "attribution", "ai_used", "source_or_inspiration"]
+optional_fields = ["url"]
+field_types.quote = "string"
+field_types.attribution = "string"
+field_types.ai_used = "string"
+field_types.source_or_inspiration = "string"
+field_types.url = "string (URL)"
+
+[schema.metadata]
+required_fields = [
+  "created_by",
+  "created_on",
+  "source_context",
+  "purpose",
+  "style_goal",
+  "language",
+  "description",
+  "collaboration",
+]
+field_types.created_by = "string"
+field_types.created_on = "string (ISO 8601 date)"
+field_types.source_context = "string"
+field_types.purpose = "string"
+field_types.style_goal = "string"
+field_types.language = "string (ISO 639-1)"
+field_types.description = "string"
+field_types.collaboration = "string (e.g., 'human+ai')"
